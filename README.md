@@ -9,28 +9,29 @@ Ease of Use: Provides clear instructions for manual terminal tweaks.
 🛠️ Usage
 Clone this repository:
 
+
 Copy code
 git clone https://github.com/yourusername/LinPrivSetup.git
 cd LinPrivSetup
 Make the script executable:
 
+
 Copy code
 chmod +x linprivsetup.sh
 Run the script with your target's IP and port:
 
-Copy code
-./linprivsetup.sh <IP> <PORT>
-If input validation fails, follow the correct format:
 
 Copy code
+./linprivsetup.sh <IP> <PORT>
+Correct format example:
+
+bash
+Copy code
 ./linprivsetup.sh 192.168.1.10 8080
-📝 Notes
-Ensure the target is hosting linpeas.sh and pspy64 at the specified IP and port.
-Run Ctrl+Z to suspend the shell, then execute:
+Suspend shell (Ctrl+Z) and adjust terminal:
+
 
 Copy code
 stty raw -echo; fg
-⚠️ Disclaimer
-This script is for educational purposes only. Unauthorized use against systems you don't own is illegal and unethical. Use responsibly.
-
-🎉 Happy Hacking!
+📝 Notes
+Ensure the target is hosting linpeas.sh and pspy64 at the specified IP and port.
